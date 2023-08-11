@@ -17,16 +17,16 @@
             android:id="@+id/clBoard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent">
             <!--clock corners-->
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ic_board"
-                android:layout_width="wrap_content"
-                android:layout_height="450dp"
+                android:layout_width="410dp"
+                android:layout_height="410dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -38,138 +38,145 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txt_225"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_marginStart="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
                 android:gravity="center"
                 android:rotation="180"
                 android:text="BETTER\nLUCK"
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"
-android:layout_marginTop="10dp"
-                app:layout_constraintBottom_toBottomOf="@+id/txt_180"
-                app:layout_constraintStart_toStartOf="@+id/ic_board"
-                app:layout_constraintTop_toTopOf="@+id/txt_360" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/hook"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txt_135"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_marginEnd="50dp"
-                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
                 android:gravity="center"
                 android:rotation="360"
                 android:text="10 COINS"
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"
-
-                app:layout_constraintBottom_toTopOf="@+id/txt_90"
-                app:layout_constraintEnd_toEndOf="@+id/ic_board"
-                app:layout_constraintTop_toBottomOf="@+id/txt_315" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hook"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txt_360"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="120dp"
+                android:layout_marginBottom="40dp"
                 android:rotation="270"
-                android:text="   50 COINS"
-                android:layout_marginLeft="10dp"
+                android:text="     50 COINS"
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txt_180"
-                app:layout_constraintEnd_toEndOf="@+id/txt_180"
-                app:layout_constraintStart_toStartOf="@+id/txt_180"
-                app:layout_constraintTop_toTopOf="@+id/ic_board" />
+                app:layout_constraintBottom_toTopOf="@+id/hook"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txt_180"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="130dp"
                 android:gravity="center"
                 android:rotation="90"
+android:layout_marginTop="20dp"
                 android:text="SPIN\nAGAIN"
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/ic_board"
-                app:layout_constraintEnd_toStartOf="@+id/txt_135"
-                app:layout_constraintStart_toEndOf="@+id/txt_225"
-                app:layout_constraintTop_toTopOf="@+id/txt_360" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hook" />
 
             <!--clock angles-->
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txt_45"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
-android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginRight="40dp"
                 android:gravity="center"
                 android:rotation="225"
                 android:text="5 COINS"
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txt_360"
-                app:layout_constraintEnd_toStartOf="@+id/txt_360"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_315" />
+                app:layout_constraintBottom_toTopOf="@+id/txt_225"
+                app:layout_constraintEnd_toStartOf="@+id/hook"
+                app:layout_constraintStart_toStartOf="@+id/txt_225"
+                app:layout_constraintTop_toBottomOf="@+id/txt_360" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txt_315"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
-                android:layout_marginRight="70dp"
+              android:layout_marginLeft="40dp"
+                android:layout_marginBottom="40dp"
                 android:gravity="center"
                 android:rotation="315"
                 android:text="20 COINS"
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txt_360"
-                app:layout_constraintEnd_toEndOf="parent"
-
-                app:layout_constraintStart_toEndOf="@+id/txt_360"
-                app:layout_constraintTop_toBottomOf="@+id/txt_360" />
+                app:layout_constraintBottom_toTopOf="@+id/txt_135"
+                app:layout_constraintEnd_toEndOf="@+id/txt_135"
+                app:layout_constraintStart_toEndOf="@+id/hook"
+                app:layout_constraintTop_toTopOf="@+id/txt_360" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txt_90"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
                 android:gravity="center"
                 android:rotation="45"
-                android:layout_marginBottom="50dp"
-                android:layout_marginRight="60dp"
                 android:text="BETTER\nLUCK"
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txt_180"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/txt_180"
-                app:layout_constraintTop_toBottomOf="@+id/txt_180" />
+                app:layout_constraintBottom_toBottomOf="@+id/txt_180"
+                app:layout_constraintEnd_toEndOf="@+id/txt_135"
+                app:layout_constraintStart_toEndOf="@+id/hook"
+                app:layout_constraintTop_toBottomOf="@+id/txt_135" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txt_270"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
                 android:gravity="center"
                 android:rotation="135"
                 android:text="10 COINS"
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="70dp"
-                android:layout_marginBottom="30dp"
-                app:layout_constraintBottom_toTopOf="@+id/txt_180"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_180"
+                app:layout_constraintEnd_toStartOf="@+id/hook"
+                app:layout_constraintStart_toStartOf="@+id/txt_225"
+                app:layout_constraintTop_toBottomOf="@+id/txt_225" />
 
-                app:layout_constraintEnd_toStartOf="@+id/txt_180"
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/hook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_180" />
+                app:layout_constraintTop_toTopOf="parent" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
