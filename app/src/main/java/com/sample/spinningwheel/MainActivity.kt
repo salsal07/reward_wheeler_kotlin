@@ -20,15 +20,23 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
+        val random = listOf<String>(
+            "50_coin",
+            "20_coin",
+            "10_coin",
+            "better_luck",
+            "spin_again",
+            "10_coin_second",
+            "better_luck_second",
+            "5_coin"
+        )
         binding.btnTarget.setOnClickListener {
             //here refreshing rotation and button status
-            binding.icBoard.rotation = 0f
+            binding.clBoard.rotation = 0f
             binding.btnTarget.isEnabled = false
 
 
-            val findAngle: Int = findAngleReward("spin_again")
+            val findAngle: Int = findAngleReward(random.random())
 
 
             // Calculate the angle needed to reach the static value (certain degrees)
@@ -40,10 +48,10 @@ class MainActivity : AppCompatActivity() {
                 override fun onTick(l: Long) {
 
                     //rotation speed add here
-                    binding.icBoard.rotation = speedControl(binding.icBoard.rotation, findAngle)
+                    binding.clBoard.rotation = speedControl(binding.clBoard.rotation, findAngle)
 
                     // Check if the current rotation angle reaches the  value angle
-                    if (binding.icBoard.rotation >= staticValueAngle) {
+                    if (binding.clBoard.rotation >= staticValueAngle) {
                         timer?.cancel()
                         binding.btnTarget.isEnabled = true // Enable the button
                     }
@@ -77,15 +85,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun speedControl(rotation: Float, findAngle: Int): Float {
         return if (rotation > 1440 + findAngle / 2) {
-            binding.icBoard.rotation + 2
+            binding.clBoard.rotation + 2
         } else if (rotation > 1440) {
-            binding.icBoard.rotation + 3
+            binding.clBoard.rotation + 3
         } else if (rotation > 1080) {
-            binding.icBoard.rotation + 6
+            binding.clBoard.rotation + 6
         } else if (rotation > 720) {
-            binding.icBoard.rotation + 9
+            binding.clBoard.rotation + 9
         } else {
-            binding.icBoard.rotation + 15
+            binding.clBoard.rotation + 15
         }
     }
 
